@@ -181,6 +181,16 @@
 # print(math.floor(5.62))
 
 
-lis=[2,5,6,4,7,8]
-lis.append([1,2,3,4])
-print(lis)
+# lis=[2,5,6,4,7,8]
+# lis.append([1,2,3,4])
+# print(lis)
+
+def cal(a,b):
+    return a+b, a-b, a*b
+
+s, sub, mul = cal(4,5)
+
+print(s, sub, mul)
+
+
+
