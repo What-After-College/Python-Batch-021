@@ -18,8 +18,7 @@ def generate_certificate(img ,name):
 def save_img(copy_img, name):
     path="certi-{}.jpg".format(name)
     cv2.imwrite(path, copy_img)
-
-
+    
 
 name = input("Enter the name that you want in that certificate : ")
 
