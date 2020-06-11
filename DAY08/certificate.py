@@ -26,5 +26,3 @@ copy_img = generate_certificate(img ,name)
 save_img(copy_img, name)
 
 
-
-
