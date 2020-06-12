@@ -24,13 +24,22 @@ def scrap(id):
         "image" : json_data["image"],
         "description" : json_data["description"]
     }
-    print(movie['name'],movie['description'])
     return movie
+
+def get_movie_details():
+    ids = get_id(10)
+    lis = []
+    for id in ids:
+        movie = scrap(id)
+        lis.append(movie)
+    return lis
+
 
 
 if __name__ == "__main__":
-    ids = get_id(3)
-    # print(ids)
-    for id in ids:
-        movie = scrap(id)
-
+    # ids = get_id(3)
+    # # print(ids)
+    # for id in ids:
+    #     movie = scrap(id)
+    lis = get_movie_details()
+    print(lis)

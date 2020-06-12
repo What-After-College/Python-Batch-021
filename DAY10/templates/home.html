@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='home.css') }}">
+    <title>my webpage</title>
+</head>
+<body>
+
+    <!-- <h1>{{ name2 }}</h1> -->
+
+
+    {% for i in lis %}
+        <h1>{{i}}</h1>
+    {% endfor %}
+
+
+    <!-- {% for i in range(1,21) %}
+        {% if i%2==0 %}
+            <h4>{{i}}=even</h4>
+        {% else %}
+            <h4>{{i}}=odd</h4>
+        {% endif %}
+    {% endfor %} -->
+
+    <!-- <h1 id="first_heading">Welcome to my webpage</h1> -->
+    <h1 class="first_heading">Welcome to my webpage</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos iste deleniti sunt, impedit beatae alias culpa ex, quod incidunt voluptatum eos laborum velit esse pariatur corrupti repellat fuga quas.</p>
+    <br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque assumenda expedita facilis dolorem quisquam? At rem sequi labore totam dolore exercitationem a laboriosam, error fugiat, itaque quidem dolorum delectus asperiores.</p>
+    <h1 class="first_heading">hello world</h1>
+    <h1>hello programmer</h1>
+    <img src="{{ url_for('static',filename='thor.jpg') }}" alt="thor ki image">
+
+
+
+</body>
+</html>
